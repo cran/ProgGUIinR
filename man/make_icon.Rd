@@ -9,15 +9,15 @@
 \usage{
   make_icon(x, ...)
 
-  \method{make_icon}{numeric} (x, ...)
+  \method{make_icon}{numeric}(x, ...)
 
-  \method{make_icon}{factor} (x, ...)
+  \method{make_icon}{factor}(x, ...)
 
-  \method{make_icon}{character} (x, ...)
+  \method{make_icon}{character}(x, ...)
 
-  \method{make_icon}{logical} (x, ...)
+  \method{make_icon}{logical}(x, ...)
 
-  \method{make_icon}{data.frame} (x, ...)
+  \method{make_icon}{data.frame}(x, ...)
 }
 \arguments{
   \item{x}{object}

@@ -8,15 +8,14 @@
 \usage{
   find_vars(x, cond = function(x) TRUE)
 
-  \method{find_vars}{default} (x, cond = function(x) TRUE)
+  \method{find_vars}{default}(x, cond = function(x) TRUE)
 
-  \method{find_vars}{character} (x,
+  \method{find_vars}{character}(x, cond = function(x) TRUE)
+
+  \method{find_vars}{data.frame}(x,
     cond = function(x) TRUE)
 
-  \method{find_vars}{data.frame} (x,
-    cond = function(x) TRUE)
-
-  \method{find_vars}{environment} (x,
+  \method{find_vars}{environment}(x,
     cond = function(x) TRUE)
 }
 \arguments{

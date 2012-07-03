@@ -1,5 +1,4 @@
 ##' @include misc.R
-##' @import gWidgets
 NULL
 
 ##' Simple GUI to browse gWidgets examples
@@ -10,7 +9,7 @@ NULL
 browsegWidgetsFiles <- function(toolkit="RGtk2") {
   e <- new.env()                        # for evaluation
 
-  if(!require(gWidgets))
+  if(!faux_require("gWidgets"))
     stop("Requires gWidgets package")
 
   options(guiToolkit=toolkit)

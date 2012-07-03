@@ -2,7 +2,6 @@
 ## these are in the package with pattern ex-RGtk2.*R
 
 ##' @include misc.R
-##' @import RGtk2
 NULL
 
 ##################################################
@@ -12,9 +11,9 @@ NULL
 ##' @return produces the GUI
 ##' @export
 browseRGtk2Files <- function() {
-  if(!require(RGtk2))
+  if(!faux_require("RGtk2"))
     stop("This requires the package RGtk2")
-  if(!require(svMisc))
+  if(!faux_require("svMisc"))
     stop("This requires the package svMisc")
 
   w <- gtkWindow(show=FALSE)

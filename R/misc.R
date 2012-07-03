@@ -1,5 +1,9 @@
 ## Miscellaneous functions
 
+faux_require <- function(pkg) {
+  do.call("require", list(package=pkg))
+}
+
 ##' List available data frames
 ##'
 ##' @param envir the environment to search in

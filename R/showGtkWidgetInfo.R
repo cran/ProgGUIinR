@@ -6,7 +6,7 @@ NULL
 ##' @return NULL
 ##' @export
 showGtkWidgetInfo <- function() {
-  if(!require(RGtk2))
+  if(!faux_require("RGtk2"))
     stop("This function require RGtk2")
   
   ## Main widgets

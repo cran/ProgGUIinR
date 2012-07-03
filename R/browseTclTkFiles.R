@@ -1,5 +1,4 @@
 ##' @include misc.R
-##' @import tcltk
 NULL
 
 
@@ -9,6 +8,8 @@ NULL
 ##' @export
 browseTclTkFiles <- function() {
 
+  if(!faux_require("tcltk"))
+    stop("This function needs the tlctk package")
 
 
   ## Helper functions
