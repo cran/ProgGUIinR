@@ -197,13 +197,15 @@ make_icon.data.frame <- function(x, ...) {
 
 ##' make an icon for type of graph
 ##'
-##' Stolen from ggplot
+##' Stolen from ggplot -- but this is now deprecated!
 ##' @param x type of graph. E.g., "boxplot", "abline", ...
 ##' @param ... dots
 ##' @return a recipe to draw an icon
 ##' @export
 ##' @examples
-##' library(grid); grid.newpage(); grid.draw(make_graph_icon("hist"))
+##' ##' ## Doesn't work as of ggplot2 version 0.9.2
+##' ##library(grid); grid.newpage(); grid.draw(make_graph_icon("hist"))
+##'
 make_graph_icon <- function(x,...) {
   require(ggplot2)
   switch(x,

@@ -13,9 +13,10 @@
   a recipe to draw an icon
 }
 \description{
-  Stolen from ggplot
+  Stolen from ggplot -- but this is now deprecated!
 }
 \examples{
-library(grid); grid.newpage(); grid.draw(make_graph_icon("hist"))
+##' ## Doesn't work as of ggplot2 version 0.9.2
+##library(grid); grid.newpage(); grid.draw(make_graph_icon("hist"))
 }
 

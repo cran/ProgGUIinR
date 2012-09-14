@@ -1,10 +1,11 @@
-be6c8abb7798920659c9e2da3e799e32 *DESCRIPTION
+39d139926919881389db738b38a4b089 *DESCRIPTION
 6197c5b1e131601fce971a93f34e425c *NAMESPACE
+ca0827c914e1efb463512c8d03a71931 *NEWS
 d820450dc2be34ecbf670f1fd6cddd23 *R/browseQtFiles.R
 2357240899adbff02d44c92ae07569ad *R/browseRGtk2Files.R
 b7c4bf3919810f26023639bf3094522f *R/browseTclTkFiles.R
 230c575166a3f7043591dc7a1efe7c18 *R/browsegWidgetsFiles.R
-b5f512d7dd062caf5ccd2efbc66f8959 *R/misc.R
+dbbe6f71d98d9671ae8f8dd5f31534f9 *R/misc.R
 4c73f672cf0583215d6cdeb9c4ab9217 *R/showGtkWidgetInfo.R
 e26ad807ecc7bd308a629dcc67bc6100 *inst/Examples/ch-Qt/ex-layout.R
 0ce147054da3f38d4f4584ed7164a832 *inst/Examples/ch-Qt/ex-qt-application-window.R
@@ -191,7 +192,7 @@ ba42e3a24fb5e6b3d77ca0af4e4aa69e *man/browsegWidgetsFiles.Rd
 1433577ceb4883e01c0da192abdfff03 *man/day.of.week.Rd
 7b8bbf2596510487346e032a60172fc4 *man/days.in.month.Rd
 8544f6c9a950d13a226d0ab60641d2d5 *man/find_vars.Rd
-b609f1cee14fa86e992cfe8db972dba2 *man/make_graph_icon.Rd
+38444efcc77712667c0eb17968fd28e9 *man/make_graph_icon.Rd
 3b21f1cac010d26712bc4084e9bbd2d0 *man/make_icon.Rd
 4b6fea56ca7798905d551fb2bbdbc963 *man/nsprintf.Rd
 02e7c2dd83df367e8c0f0da6e59ff486 *man/showGtkWidgetInfo.Rd
