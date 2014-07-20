@@ -149,7 +149,7 @@ make_icon <- function(x, ...) UseMethod("make_icon")
 ##' @S3method make_icon numeric
 ##' @method make_icon numeric
 ##' @rdname make_icon
-make_icon.numeric <- function(x, ...) grid:::textGrob("#", gp=grid:::gpar(cex=1.2, col="gray50"))
+make_icon.numeric <- function(x, ...) grid::textGrob("#", gp=grid::gpar(cex=1.2, col="gray50"))
 
 ##' method for numeric class
 ##'
@@ -157,7 +157,7 @@ make_icon.numeric <- function(x, ...) grid:::textGrob("#", gp=grid:::gpar(cex=1.
 ##' @S3method make_icon factor
 ##' @method make_icon factor
 ##' @rdname make_icon
-make_icon.factor <- function(x, ...)  grid:::textGrob("f", gp=grid:::gpar(cex=1.2, col="gray50", fontface="italic"))
+make_icon.factor <- function(x, ...)  grid::textGrob("f", gp=grid::gpar(cex=1.2, col="gray50", fontface="italic"))
 
 ##' method for numeric class
 ##'
@@ -167,9 +167,9 @@ make_icon.factor <- function(x, ...)  grid:::textGrob("f", gp=grid:::gpar(cex=1.
 ##' @rdname make_icon
 make_icon.character <- function(x, ...) {
   cex <- 1.2
-  grid:::grid.draw(grid:::textGrob("a", x=.25, y=.25, gp=grid:::gpar(cex=cex, col="gray70")))
-  grid:::grid.draw(grid:::textGrob("b", x=.5, y=.75, gp=grid:::gpar(cex=cex, col="gray60")))
-  grid:::grid.draw(grid:::textGrob("c", x=.75, y=.5, gp=grid:::gpar(cex=cex, col="gray50")))
+  grid::grid.draw(grid::textGrob("a", x=.25, y=.25, gp=grid::gpar(cex=cex, col="gray70")))
+  grid::grid.draw(grid::textGrob("b", x=.5, y=.75, gp=grid::gpar(cex=cex, col="gray60")))
+  grid::grid.draw(grid::textGrob("c", x=.75, y=.5, gp=grid::gpar(cex=cex, col="gray50")))
 }
 
 ##' method for numeric class
@@ -180,8 +180,8 @@ make_icon.character <- function(x, ...) {
 ##' @rdname make_icon
 make_icon.logical <- function(x, ...) {
   cex <- 1.2
-  grid:::grid.draw(grid:::textGrob("FALSE", x=.75, y=.25, gp=grid:::gpar(cex=cex, col="gray50")))
-  grid:::grid.draw(grid:::textGrob("TRUE", x=.25, y=.75, gp=grid:::gpar(cex=cex, col="gray70")))
+  grid::grid.draw(grid::textGrob("FALSE", x=.75, y=.25, gp=grid::gpar(cex=cex, col="gray50")))
+  grid::grid.draw(grid::textGrob("TRUE", x=.25, y=.75, gp=grid::gpar(cex=cex, col="gray70")))
 }
 
 ##' method for numeric class
@@ -192,7 +192,7 @@ make_icon.logical <- function(x, ...) {
 ##' @rdname make_icon
 make_icon.data.frame <- function(x, ...) {
   cex <- 1.2
-  grid:::grid.draw(grid:::textGrob("data.frame", gp=grid:::gpar(cex=cex, col="gray70")))
+  grid::grid.draw(grid::textGrob("data.frame", gp=grid::gpar(cex=cex, col="gray70")))
 }
 
 ##' make an icon for type of graph
@@ -207,24 +207,25 @@ make_icon.data.frame <- function(x, ...) {
 ##' ##library(grid); grid.newpage(); grid.draw(make_graph_icon("hist"))
 ##'
 make_graph_icon <- function(x,...) {
-  require(ggplot2)
-  switch(x,
-         "abline"=ggplot2:::GeomAbline$icon(),
-         "boxplot"=ggplot2:::GeomBoxplot$icon(),
-         "bwplot"=ggplot2:::GeomBoxplot$icon(),
-         "contour"=ggplot2:::GeomContour$icon(),
-         "density"=ggplot2:::GeomDensity$icon(),
-         "hist"=ggplot2:::GeomHistogram$icon(),
-         "histogram"=ggplot2:::GeomHistogram$icon(),
-         "lines"=ggplot2:::GeomLine$icon(),
-         "points"=ggplot2:::GeomPoint$icon(),
-         "polygon"=ggplot2:::GeomPolygon$icon(),
-         "qqplot"=ggplot2:::GeomQuantile$icon(),
-         "qqnorm"=ggplot2:::GeomQuantile$icon(),
-         "rect" = ggplot2:::GeomRect$icon(),
-         "rug" = ggplot2:::GeomRug$icon(),
-         ggplot2:::GeomPoint$icon()
-       )
+    .Deprecated("NA")
+##   require(ggplot2)
+##   switch(x,
+##          "abline"=ggplot2::GeomAbline$icon(),
+##          "boxplot"=ggplot2::GeomBoxplot$icon(),
+##          "bwplot"=ggplot2:::GeomBoxplot$icon(),
+##          "contour"=ggplot2:::GeomContour$icon(),
+##          "density"=ggplot2:::GeomDensity$icon(),
+##          "hist"=ggplot2:::GeomHistogram$icon(),
+##          "histogram"=ggplot2:::GeomHistogram$icon(),
+##          "lines"=ggplot2:::GeomLine$icon(),
+##          "points"=ggplot2:::GeomPoint$icon(),
+##          "polygon"=ggplot2:::GeomPolygon$icon(),
+##          "qqplot"=ggplot2:::GeomQuantile$icon(),
+##          "qqnorm"=ggplot2:::GeomQuantile$icon(),
+##          "rect" = ggplot2:::GeomRect$icon(),
+##          "rug" = ggplot2:::GeomRug$icon(),
+##          ggplot2:::GeomPoint$icon()
+##        )
 }
 
 

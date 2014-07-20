@@ -264,13 +264,13 @@ browseRGtk2Files <- function() {
     word <- findWord(view, e, data)
     if(word== "")
       return(FALSE)
-    comps <- Complete(word)
+    comps <- svMisc::completion(word)
     if(!is.data.frame(comps))
       return(FALSE)
     ind <- which(word == comps[,1])
     if(length(ind) && comps[ind, "type"] %in% c("function","variable")) {
       FUN <- comps[ind, "completion"]
-      sb$push(1, Args(FUN))
+      sb$push(1, svMisc::argsTip(FUN))
     } else {
       sb$push(1,"")
     }

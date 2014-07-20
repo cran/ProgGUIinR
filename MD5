@@ -1,11 +1,11 @@
-39d139926919881389db738b38a4b089 *DESCRIPTION
-6197c5b1e131601fce971a93f34e425c *NAMESPACE
-ca0827c914e1efb463512c8d03a71931 *NEWS
+2e062af48d9330d1c3fe3c191435f274 *DESCRIPTION
+462f2c21cd33ce52e8f06f6343d9d514 *NAMESPACE
+dcf6eaba19a520e9a8afbaa08fa2e378 *NEWS
 d820450dc2be34ecbf670f1fd6cddd23 *R/browseQtFiles.R
-2357240899adbff02d44c92ae07569ad *R/browseRGtk2Files.R
+34449c86f704b8c06d2f90628aab4d18 *R/browseRGtk2Files.R
 b7c4bf3919810f26023639bf3094522f *R/browseTclTkFiles.R
 230c575166a3f7043591dc7a1efe7c18 *R/browsegWidgetsFiles.R
-dbbe6f71d98d9671ae8f8dd5f31534f9 *R/misc.R
+ff73b4715ad565b25cf81da649a1e331 *R/misc.R
 4c73f672cf0583215d6cdeb9c4ab9217 *R/showGtkWidgetInfo.R
 e26ad807ecc7bd308a629dcc67bc6100 *inst/Examples/ch-Qt/ex-layout.R
 0ce147054da3f38d4f4584ed7164a832 *inst/Examples/ch-Qt/ex-qt-application-window.R
